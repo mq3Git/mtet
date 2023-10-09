@@ -117,7 +117,7 @@ $_SESSION['token'] = $token;
         <h2>CONTACT</h2>
         <h3>お問い合わせ</h3>
       </span>
-      <form action="send.php" method="post">
+      <form action="/send.php" method="post">
         <div class="form">
           <lavel for="company">会社・団体名<br></lavel>
           <input type="text" class="input" name="company" value="<?php if(isset($company)){echo $company;} ?>" placeholder="株式会社 本所建設">
@@ -142,7 +142,7 @@ $_SESSION['token'] = $token;
        
       </form>
           
-    <form method="post" action="send.php" class="btnItem">
+    <form method="post" action="/send.php" class="btnItem">
       <input type="hidden" name="token" value="<?php echo $token ?>">
       <button type="submit" class="sendBtn send" value="送信">送信</button>
     </form>
