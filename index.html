@@ -68,114 +68,67 @@
     <main>
       <article>
 
-        <section class="top">
-          <span class="topText">
-            <h1 style="color: #40c0f2;">EXPRESS</h1>
-            <h1 style="color: #000;">YOUR</h1>
-            <h1 style="color: #fff;">BRAND</h1>
-          </span>
-          <div class="video-container">
-            <video autoplay loop muted playsinline>
-              <source src="img/top_movie.mp4" type="video/mp4">
-            </video>
-          </div>
-        </section>
+        <section class="contents lowertop">
+      <span class="fadeup topanim">
+        <h2>CONTACT</h2>
+        <h3>お問い合わせ</h3>
+      </span>
+      <form action="mail.php" method="post">
+        <div class="form">
+          <lavel for="company">会社・団体名<br></lavel>
+          <input type="text" class="input" name="会社・団体名" placeholder="株式会社 本所建設">
+        </div>
+        <div class="form">
+          <lavel for="name">お名前<span id="red">*</span></lavel>
+          <input type="text" class="input" name="お名前" placeholder="氏名" required>
+        </div>
+        <div class="form">
+          <lavel for="mail">メールアドレス<span id="red">*</span></lavel>
+          <input type="email" class="input" name="メールアドレス" placeholder="sample@sample.co.jp" required>
+        </div>
+        <div class="form">
+          <lavel for="num">電話番号</lavel>
+          <input type="tel" class="input" name="電話番号" placeholder="09012345678">
+        </div>
+        <div class="form">
+          <lavel for="body" class="bodylabel">お問い合わせ内容<span id="red">*</span></lavel>
+          <textarea type="text" class="input" name="お問い合わせ内容"  rows="7"  required></textarea>
+        </div>
+        <div class="form">
+       
+      </form>          
+      <button type="submit" class="sendBtn" value="送信">送信</button>
+      <script>
+        let submitted = false;
+    
+        const page_transition = function () {
+            if(submitted){
+                window.location = 'thanks.html';
+            }
+        }
+    </script>    
+    <iframe name="hidden_iframe" style="display:none;" onload="page_transition()"></iframe>
 
-        <section class="contents">
-          <span class="fade">
-            <h2>ABOUT US</h2>
-            <h3>わたしたちについて</h3>
-          </span>
-          <div>
-            <span class="slide_background slideout delay1"></span>
-            <p style="color: #0D00A8;">本所建設は従来の土木会社から発展させ<br>
-            技術会社として「世に新しい分野の事業を建設する」という活動を企業活動とし<br>
-            その作品を通じて社会に新たなソリューションを建設し続けます</p>
-          </div>
-          <span class="imgFlex fadeup delay2">
-            <img src="img/dr-left.png">
-            <img src="img/dr-right.png">
-          </span>
-        </section>
+  </section>
 
-        <a id="s"></a>
-        <section class="parallax-bg">
-          <div class="contents">
-            <span>
-              <h2>SERVICE</h2>
-              <h3>事業内容</h3>
-            </span>
-            <ul class="itemlist">
-              <!-- <li><a href="/movie/index.html"><img src="/img/movie.png">
-                <h4>映像制作</h4>
-                <h5>企画の段階から制作にいたるまで、お客様のアイデアを最高のビジュアルで表現いたします</h5>
-                <p>More</p></a>
-              </li> -->
-              <li><a href="measurement/index.html"><img src="img/juki.png">
-                <h4>測量</h4>
-                <h5>クオリティの高い成果物と細部にまでこだわったきめの細かいサービスでお客様の手を煩わせない唯一無二の価値をご提供いたします</h5>
-                <p>More</p></a>
-              </li>
-              <li><a href="dot/index.html"><img src="img/town.png">
-                <h4>点検</h4>
-                <h5>ドローンを組み合わせた検査方法で目視だけでは分からない状況や変化も正確な検査をすることができます</h5>
-                <p>More</p></a>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <footer>
+    <div>
+      <img src="../img/logo.png">
+      <p>本社<br>〒584-0005 大阪府富田林市喜志町3丁目1268-4<br>TEL 0721-24-0015　　FAX 0721-24-0315</p>
+      <p>大阪支店<br>〒530-0041 大阪府大阪市北区天神橋2丁目3番8号 MF南森町ビル10階<br>TEL 06-6135-0015　　FAX 06-6135-0016</p>
+      <hr>
+      <nav>
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <!-- <li><a href="news/index.html">NEWS</a></li> -->
+          <li><a href="../company/index.html">COMPANY</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+        <p>Copyright(C) HONJO CORPORATION All Rights Reserved.</p>
+      </nav>
+    </div>
+  </footer>
 
-        <!-- <section class="contents">
-          <span>
-            <h2>Collaboration</h2>
-            <h3>協業サービス</h3>
-          </span>
-          <span class="imgFlex_col">
-            <img src="/img/flxto.jpg">
-            <img src="/img/dr_show.png">
-          </span>
-        </section> -->
-
-        <!-- <section class="contents">
-          <span>
-            <h2>NEWS</h2>
-            <h3>お知らせ</h3>
-          </span>
-          <ul>
-            <dl>
-              <a href="#"><dd>02/28/2022</dd>
-              <dd>ブライダル産業新聞様に取り上げて頂きました！</dd></a>
-            </dl>
-            <dl>
-              <a href="#"><dd>12/29/2021</dd>
-              <dd>本所建設とザキクスイロウナラパークがドローンを活用した共同サービス「fly wedding」を提供開始！</dd></a>
-            </dl>
-          </ul>
-        </section> -->
-
-        
-        <section class="contents contactbtn">
-          <a href="#"><button><p>CONTACT</p><h4>お問い合わせ</h4></button></a>
-        </section>
-
-        
-        <footer>
-          <div>
-            <img src="img/logo.png">
-            <p>本社<br>〒584-0005 大阪府富田林市喜志町3丁目1268-4<br>TEL 0721-24-0015　　FAX 0721-24-0315</p>
-            <p>大阪支店<br>〒530-0041 大阪府大阪市北区天神橋2丁目3番8号 MF南森町ビル10階<br>TEL 06-6135-0015　　FAX 06-6135-0016</p>
-            <hr>
-            <nav>
-              <ul>
-                <li><a href="index.html">HOME</a></li>
-                <!-- <li><a href="news/index.html">NEWS</a></li> -->
-                <li><a href="company/index.html">COMPANY</a></li>
-                <li><a href="#">CONTACT</a></li>
-              </ul>
-              <p>Copyright(C) HONJO CORPORATION All Rights Reserved.</p>
-            </nav>
-          </div>
-        </footer>
 
       </article>
     </main>
