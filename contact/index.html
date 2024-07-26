@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang=”ja”>
+<head>
+    
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/anime.css">
+
+<title>CONTACT | drone</title>
+</head>
+<body>
+  
+<header>
+    <a href="#"><img src="" class="logo"></a>
+    <div id="hamburger">
+      <div class="icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
+    <nav id="gnav"> 
+      <ul id="large-menu">
+        <li><a href="../index.html">HOME</a></li>
+        <!-- <li><a href="/news/index.html">NEWS</a></li> -->
+        <li><a href="../company/index.html">COMPANY</a></li>
+        <li class="menu"><a href="#">SERVICE</a>
+          <ul class="menu_inner">
+            <li><a href="../measurement/index.html">測量</a></li>
+            <li><a href="../dot/index.html">点検</a></li>
+          </ul>
+        </li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <nav class="sm"> 
+      <div class="fl">
+        <ul id="large-menu">
+          <li><a href="../index.html">HOME</a></li>
+          <!-- <li><a href="/news/index.html">NEWS</a></li> -->
+          <li><a href="../company/index.html">COMPANY</a></li>
+          <li class="menu"><a href="#">SERVICE</a>
+            <ul>
+            <li><a href="../measurement/index.html">測量</a></li>
+            <li><a href="../dot/index.html">点検</a></li>
+            </ul>
+          </li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<!-- ここから本文 -->
+
+<main>
+  <article>
+        
+    <section class="contents lowertop">
+      <span class="fadeup topanim">
+        <h2>CONTACT</h2>
+        <h3>お問い合わせ</h3>
+      </span>
+      <form action="mail.php" method="post">
+        <div class="form">
+          <lavel for="company">会社・団体名<br></lavel>
+          <input type="text" class="input" name="会社・団体名" placeholder="株式会社 本所建設">
+        </div>
+        <div class="form">
+          <lavel for="name">お名前<span id="red">*</span></lavel>
+          <input type="text" class="input" name="お名前" placeholder="氏名" required>
+        </div>
+        <div class="form">
+          <lavel for="mail">メールアドレス<span id="red">*</span></lavel>
+          <input type="email" class="input" name="メールアドレス" placeholder="sample@sample.co.jp" required>
+        </div>
+        <div class="form">
+          <lavel for="num">電話番号</lavel>
+          <input type="tel" class="input" name="電話番号" placeholder="09012345678">
+        </div>
+        <div class="form">
+          <lavel for="body" class="bodylabel">お問い合わせ内容<span id="red">*</span></lavel>
+          <textarea type="text" class="input" name="お問い合わせ内容"  rows="7"  required></textarea>
+        </div>
+        <div class="form">
+       
+      </form>          
+      <button type="submit" class="sendBtn" value="送信">送信</button>
+      <script>
+        let submitted = false;
+    
+        const page_transition = function () {
+            if(submitted){
+                window.location = 'thanks.html';
+            }
+        }
+    </script>    
+    <iframe name="hidden_iframe" style="display:none;" onload="page_transition()"></iframe>
+
+  </section>
+
+  <footer>
+    <div>
+      <img src="../img/logo.png">
+      <p>本社<br>〒584-0005 大阪府富田林市喜志町3丁目1268-4<br>TEL 0721-24-0015　　FAX 0721-24-0315</p>
+      <p>大阪支店<br>〒530-0041 大阪府大阪市北区天神橋2丁目3番8号 MF南森町ビル10階<br>TEL 06-6135-0015　　FAX 06-6135-0016</p>
+      <hr>
+      <nav>
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <!-- <li><a href="news/index.html">NEWS</a></li> -->
+          <li><a href="../company/index.html">COMPANY</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+        <p>Copyright(C) HONJO CORPORATION All Rights Reserved.</p>
+      </nav>
+    </div>
+  </footer>
+
+</article>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/js.js"></script>
+</body>
+</html>
